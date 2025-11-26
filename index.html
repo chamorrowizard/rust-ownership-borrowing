@@ -4,6 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Rust Ownership & Borrowing — Flashcards</title>
+<link rel="stylesheet" href="flashcards-responsive.css">
+
 <style>
   :root{
     --bg1: #071426;
@@ -660,6 +662,13 @@ document.getElementById('cardWrap').addEventListener('keydown', (e) => {
   // set counters and aria
   document.getElementById('totalCount').textContent = cards.length;
 })();
+//recalc height on rotation
+ function fixVH() {
+        document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+    }
+    window.addEventListener('resize', fixVH);
+    window.addEventListener('orientationchange', fixVH);
+    fixVH();
 
 </script>
 </body>
