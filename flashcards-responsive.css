@@ -15,7 +15,7 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 20px;
-    padding-top: calc(100px + env(safe-area-inset-top)) !important;
+    padding-top: calc(150px + env(safe-area-inset-top)) !important;
     min-height: calc(var(--vh, 1vh) * 100);
 }
 
