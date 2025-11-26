@@ -15,7 +15,8 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 20px;
-    padding-top: env(safe-area-inset-top, 60px) !important;
+    padding-top: calc(env(safe-area-inset-top) + 60px) !important;
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 /* =======================================
@@ -26,6 +27,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
+    margin-top: 20px !important;
 }
 
 /* For tablets */
@@ -74,4 +76,8 @@ body {
     h1 {
         font-size: 1.4rem;
     }
+}
+
+:root {
+    --vh: 1vh;
 }
