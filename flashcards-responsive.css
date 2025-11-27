@@ -13,10 +13,14 @@ html {
 
 body {
     width: 100%;
-    min-height: 100vh;
     padding: 20px;
-    padding-top: calc(150px + env(safe-area-inset-top)) !important;
-    min-height: calc(var(--vh, 1vh) * 100);
+    padding-top: calc(120px + env(safe-area-inset-top)) !important;
+
+    height: auto !important;
+    min-height: auto !important;
+
+    /* Ensure content flows naturally */
+    display: block !important;
 }
 
 /* =======================================
