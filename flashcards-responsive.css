@@ -14,7 +14,7 @@ html {
 body {
     width: 100%;
     padding: 20px;
-    padding-top: calc(120px + env(safe-area-inset-top)) !important;
+    padding-top: calc(60px + env(safe-area-inset-top)) !important;
 
     height: auto !important;
     min-height: auto !important;
